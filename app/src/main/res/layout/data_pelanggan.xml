@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_15dp">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:background="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:title="Mapples - Pelanggan"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="@color/colorWhite"
+                android:background="@color/colorPrimary"
+                android:theme="@style/AppTheme.Toolbar"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:layout_width="match_parent"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:background="@color/colorBackground"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="@dimen/_15dp"
+                        android:layout_marginRight="@dimen/_15dp"
+                        app:cardCornerRadius="7dp">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                style="@style/Widget.TextView.Title"
+                                android:text="Id Pelanggan"/>
+
+                            <EditText
+                                android:enabled="false"
+                                android:text="@{item.g_uid}"
+                                android:id="@+id/idPelanggan"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                style="@style/Widget.EditText.Primary"
+                                android:textColor="@color/colorTextGray1"
+                                android:inputType="textCapWords" />
+
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                style="@style/Widget.TextView.Title"
+                                android:text="@string/no_meter"/>
+
+                            <EditText
+                                android:enabled="false"
+                                android:text="@{item.g_uid}"
+                                android:id="@+id/noMeter"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                style="@style/Widget.EditText.Primary"
+                                android:textColor="@color/colorTextGray1"
+                                android:inputType="textCapWords" />
+
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                style="@style/Widget.TextView.Title"
+                                android:text="@string/nama_pelanggan"/>
+
+                            <EditText
+                                android:enabled="false"
+                                android:text="@{item.g_uid}"
+                                android:id="@+id/nmPelanggan"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                style="@style/Widget.EditText.Primary"
+                                android:textColor="@color/colorTextGray1"
+                                android:inputType="textCapWords" />
+
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                style="@style/Widget.TextView.Title"
+                                android:text="@string/alamat_pelanggan"/>
+
+                            <EditText
+                                android:enabled="false"
+                                android:text="@{item.g_uid}"
+                                android:id="@+id/alamatPelanggan"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                style="@style/Widget.EditText.Primary"
+                                android:textColor="@color/colorTextGray1"
+                                android:inputType="textCapWords" />
+
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                style="@style/Widget.TextView.Title"
+                                android:text="@string/tarif_pelanggan"/>
+
+                            <EditText
+                                android:enabled="false"
+                                android:text="@{item.g_uid}"
+                                android:id="@+id/tarifPelanggan"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                style="@style/Widget.EditText.Primary"
+                                android:textColor="@color/colorTextGray1"
+                                android:inputType="textCapWords" />
+
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                style="@style/Widget.TextView.Title"
+                                android:text="@string/daya"/>
+
+                            <EditText
+                                android:enabled="false"
+                                android:text="@{item.g_uid}"
+                                android:id="@+id/daya"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                style="@style/Widget.EditText.Primary"
+                                android:textColor="@color/colorTextGray1"
+                                android:inputType="textCapWords" />
+
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                style="@style/Widget.TextView.Title"
+                                android:text="@string/blth_ts"/>
+
+
+                            <EditText
+                                android:enabled="false"
+                                android:text="@{item.g_uid}"
+                                android:id="@+id/blth_ts"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                style="@style/Widget.EditText.Primary"
+                                android:textColor="@color/colorTextGray1"
+                                android:inputType="textCapWords" />
+
+
+                            <TextView
+                                android:id="@+id/idTrp"
+                                android:layout_marginTop="25dp"
+                                style="@style/Widget.TextView.Title"
+                                android:text="@string/rp_ts"/>
+
+                            <LinearLayout
+                                android:id="@+id/idRp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <EditText
+                                    android:id="@+id/idTarif"
+                                    android:layout_marginLeft="16dp"
+                                    style="@style/Widget.EditText.Primary"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="2"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:foreground="?attr/selectableItemBackground"
+                                    tools:ignore="UnusedAttribute" />
+
+                                <ImageView
+                                    android:id="@+id/btnAdd"
+                                    android:src="@drawable/ic_add"
+                                    android:paddingStart="@dimen/_10dp"
+                                    android:paddingLeft="@dimen/_10dp"
+                                    android:paddingTop="@dimen/_5dp"
+                                    android:paddingBottom="@dimen/_10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                                <ImageView
+                                    android:id="@+id/btnMin"
+                                    android:src="@drawable/ic_min"
+                                    android:paddingStart="@dimen/_10dp"
+                                    android:paddingLeft="@dimen/_10dp"
+                                    android:paddingTop="@dimen/_5dp"
+                                    android:paddingBottom="@dimen/_10dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginRight="16dp"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                            </LinearLayout>
+
+
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                style="@style/Widget.TextView.Title"
+                                android:text="@string/penetapan"/>
+
+
+                            <EditText
+                                android:enabled="false"
+                                android:text="@{item.g_uid}"
+                                android:id="@+id/penetapan"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                style="@style/Widget.EditText.Primary"
+                                android:textColor="@color/colorTextGray1"
+                                android:inputType="textCapWords" />
+
+                            <TextView
+                                android:layout_marginTop="25dp"
+                                style="@style/Widget.TextView.Title"
+                                android:text="@string/jenis_penetapan"/>
+
+
+                            <EditText
+                                android:enabled="false"
+                                android:text="@{item.g_uid}"
+                                android:id="@+id/jenisPenetapan"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                style="@style/Widget.EditText.Primary"
+                                android:textColor="@color/colorTextGray1"
+                                android:inputType="textCapWords" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>
